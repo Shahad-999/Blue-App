@@ -11,10 +11,14 @@ fun MainApp() {
         startDestination = Screen.Login.route,
     ) {
         composable(Screen.Login.route) {
-            LoginScreen(navController)
+            LoginScreen(
+                navToHome = {navController.navigate(Screen.Home.route)}
+            )
         }
         composable(Screen.Home.route) {
-            HomeScreen(navController)
+            HomeScreen(
+                navToLogin = {navController.navigate(Screen.Login.route) }
+            )
         }
 
     }

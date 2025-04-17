@@ -6,11 +6,12 @@ import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavController
 
 
 @Composable
-fun LoginScreen(navController: NavController) {
+fun LoginScreen(
+    navToHome: () -> Unit,
+) {
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -18,9 +19,7 @@ fun LoginScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("Welcome to the Login Screen")
-        Button(onClick = {
-            navController.navigate(Screen.Home.route)
-        }) {
+        Button(onClick = navToHome) {
             Text("Login")
         }
     }
