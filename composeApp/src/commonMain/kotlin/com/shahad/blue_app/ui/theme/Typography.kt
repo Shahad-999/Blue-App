@@ -1,9 +1,10 @@
-package ui.theme
+package com.shahad.blue_app.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.Font
 import blueapp.composeapp.generated.resources.Res
 import blueapp.composeapp.generated.resources.*
@@ -69,46 +70,6 @@ fun SFTypography(): Typography = Typography(
         lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
         letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
     ),
-    subtitle2 = Typography().subtitle2.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.Normal,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    ),
-    body1 = Typography().body1.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.Normal,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    ),
-    body2 = Typography().body2.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.Normal,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    ),
-    button = Typography().button.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.SemiBold,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    ),
-    caption = Typography().caption.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.Normal,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    ),
-    overline = Typography().overline.copy(
-        fontFamily = SFFontFamily(),
-        fontWeight = FontWeight.Normal,
-        fontSize = androidx.compose.ui.unit.TextUnit.Unspecified,
-        lineHeight = androidx.compose.ui.unit.TextUnit.Unspecified,
-        letterSpacing = androidx.compose.ui.unit.TextUnit.Unspecified
-    )
+
+
 )
